@@ -1,0 +1,18 @@
+type Container @model {
+  id: ID!
+  whereismycontainerId: String!
+  pickup: Address!
+  delivery: Address!
+  shipperReference: String!
+  events: [Event!]
+}
+
+type Event {
+  occuredAt: String!
+  name: String!
+}
+
+type Address {
+  name: String!
+  address: String!
+}
